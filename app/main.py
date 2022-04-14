@@ -23,8 +23,8 @@ def verify_image_extension(imagePath: str):
 
 
 def get_output_file_name(ipImage: str):
-    imageName, imageExt = os.path.splitext(ipImage)
-    return f"{imageName}_updated.jpg"
+    imageName, _ = os.path.splitext(ipImage)
+    return f"{imageName}_flipped.jpg"
 
 
 def parse_cmdline():
@@ -41,7 +41,7 @@ def parse_cmdline():
                         help="Rotate image by an angle.")
     parser.add_argument("-rsh", "--resize_height", dest="rs_height",
                         type=int, help="Resize image Height")
-    parser.add_argument("-rsw", "--resize_width", dest="rs_width", 
+    parser.add_argument("-rsw", "--resize_width", dest="rs_width",
                         type=int, help="Resize image Width")
 
     args = parser.parse_args()

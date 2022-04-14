@@ -20,6 +20,6 @@ Here are sample programs for image manipulation using `pillow` (PIL - Python Ima
 
 ![image info](./input/rose1_example.jpg)
 
-### Output Image 1
+### Output Image 2
 
 ![image info](./output/rose_flipped.jpg)
